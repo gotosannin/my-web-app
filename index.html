@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>8월 첫째주 계획표</h1>
+
+    <div class="todo-input">
+        <input type="text" id="newTodo" placeholder="할 일을 입력하세요">
+        <select id="daySelect">
+            <option value="0">일</option>
+            <option value="1">월</option>
+            <option value="2">화</option>
+            <option value="3">수</option>
+            <option value="4">목</option>
+            <option value="5">금</option>
+            <option value="6">토</option>
+            <option value="7">메모</option>
+        </select>
+        <button onclick="addTodo()">추가</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+                <th>메모</th>
+            </tr>
+        </thead>
+        <tbody id="todoList">
+            <!-- 할 일 목록이 추가될 위치 -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
